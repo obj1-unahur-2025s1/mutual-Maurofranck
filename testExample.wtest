@@ -1,9 +1,23 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
+describe "grouep of test mutual"{
+  const trek1 = new SalidaDeTrekking(kms=100,diasDeSol=130,idiomas=#{"ingles"})
+  const trek2 = new SalidaDeTrekking(kms=50,diasDeSol=240,idiomas=#{"ingles"})
+    const trek3 = new SalidaDeTrekking(kms=250,diasDeSol=130,idiomas=#{"ingles"})
+    const Playa1 = new ViajeDePlaya(largo = 1000,idiomas=#("jeringoso"))
+    const gim1= new claseDeGimnasia()
+    const roque= new Socio(maximoActividades=2)
+}
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
-  }
+method initialize(){
+  roque.registrarActividad(playa1)
+  roque.registrarActividad(playa2)
+}
 
+test "trek1 lleva 2 dias"{
+  assert.equals(2,treck1.dias())
+}
+
+test "trek2 lleva 1 dias"{
+  assert.equals(1,trek2.dias())
 }
